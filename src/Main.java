@@ -12,12 +12,12 @@ public class Main {
 
 
         eevees.stream()
-                .filter(eevee -> eevee.getHitpoint() > 100)
-                .forEach(eevee -> System.out.println("たいりょくが１００以上は" + eevee.getName() + "です"));
+                .filter(eevee -> eevee.getAttack() > 100)
+                .forEach(eevee -> System.out.println("こうげきが１００以上は" + eevee.getName() + "です"));
 
         eevees.stream()
-                .filter(eevee -> eevee.getContact() > 100)
-                .forEach(eevee -> System.out.println("とくこうが１００以上は" + eevee.getName() + "です"));
+                .filter(eevee -> eevee.getDefense() > 100)
+                .forEach(eevee -> System.out.println("とくぼうが１００以上は" + eevee.getName() + "です"));
 
         System.out.println("すばやさが早い順で並び替えます");
         eevees.stream()
